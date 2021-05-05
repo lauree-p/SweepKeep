@@ -97,6 +97,73 @@ const rotateCard = () => {
 }
 
 /**
+ * Ajouter à la liste
+ */
+ const addToList = (list, ingredientName, image) => {
+    image = (typeof image === 'undefined') ? 'default' : image;
+    var ul = document.getElementById(list);
+    var li = document.createElement("li");
+    li.textContent = ingredientName;
+    if (list == "list-keep") {
+        li.classList.add("ingre-keep");
+    } else if (list == "list-sweep") {
+        li.classList.add("ingre-sweep");
+    } else {
+        if (ingredientName == "Aucune recette trouvée") {
+            li.style.listStyle = "none";
+        } else {
+            li.classList.add("recipe");
+            li.style.listStyle = "disc";
+            var img = document.createElement("img");
+            img.src = image;
+            li.appendChild(img);
+        }
+    }
+    ul.appendChild(li);
+}
+
+/**
+ * Au clic sur le bouton Sweep
+ */
+ const sweep = () => {
+    cardsElement = document.getElementsByClassName("card");
+    var cardsSweepElement = document.getElementsByClassName("ingre-sweep");
+    var currentIngredient;
+
+
+    for (var i = 0; i < cardsElement.length; i++) {
+        if (cardsElement[i].style.zIndex == cardsElement.length) {
+            currentIngredient = cardsElement[i].firstChild.textContent;
+        }
+    }
+
+    if (cardsSweepElement.length == 0 || !cardsSweep.includes(currentIngredient)) {
+        addToList('list-sweep', currentIngredient);
+        cardsSweep.push(currentIngredient);
+    }
+
+    // Si dans les ingrédient gardé il y a l'ingredient courant
+    if (cardsKeep.includes(currentIngredient)) {
+        // On supprime l'ingrédient des carte gardées
+        var pos = cardsKeep.indexOf(currentIngredient);
+        cardsKeep.splice(pos, 1);
+    }
+
+    // On supprime l'ingrédient des elements carte gardées
+    for (var i = 0; i < cardsKeepElement.length; i++) {
+        if (cardsKeepElement[i].firstChild.textContent == currentIngredient) {
+            cardsKeepElement[i].parentNode.removeChild(cardsKeepElement[i]);
+        }
+    }
+
+    findRecipe();
+    addListRecipe();
+    firstToLast();
+    rotateCard();
+
+}
+
+/**
  * Appel de la methode loadJSON() pour l'initialisation des cartes ingrédients
  */
 loadJSON('ingredients.json', function (response) {
