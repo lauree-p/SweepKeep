@@ -123,6 +123,44 @@ const rotateCard = () => {
 }
 
 /**
+ * Permet de savoir si la valeur est == true
+ */
+ const isTrue = (currentValue) => currentValue == true;
+
+ /**
+  * Trouver une recette
+  */
+ const findRecipe = () => {
+ 
+     recipesFind = [];
+     // On parcours les recettes
+     for (var i = 0; i < recipes.length; i++) {
+         // Remise à zero des tableaux
+         ingredientsFind = [];
+         ingredientsFindByRecipe = [];
+ 
+         for (var j = 0; j < recipes[i].ingredients.length; j++) {
+             var ingreFind = cardsKeep.includes(recipes[i].ingredients[j]);
+             ingredientsFind.push(ingreFind);
+         }
+ 
+         ingredientsFindByRecipe[i] = ingredientsFind;
+ 
+         if (ingredientsFindByRecipe[i].every(isTrue)) {
+             var recipeWithImg = [recipes[i].title, recipes[i].img];
+             if (!recipesFind.includes(recipes[i].title)) {
+                 recipesFind.push(recipeWithImg);
+             }
+         } else {
+             var pos = recipesFind.indexOf(recipes[i].title);
+             recipesFind.splice(pos, 1);
+         }
+     }
+     nbrRecipesFindElement.innerHTML = recipesFind.length+" Recettes trouvées";
+     recipesFind.sort();
+}
+
+/**
  * Au clic sur le bouton Sweep
  */
  const sweep = () => {
@@ -162,6 +200,47 @@ const rotateCard = () => {
     rotateCard();
 
 }
+
+/**
+ * Au clic sur le bouton Keep 
+ */
+ const keep = () => {
+    cardsElement = document.getElementsByClassName("card");
+    var cardsKeepElement = document.getElementsByClassName("ingre-keep");
+    var currentIngredient;
+
+    for (var i = 0; i < cardsElement.length; i++) {
+        if (cardsElement[i].style.zIndex == cardsElement.length) {
+            currentIngredient = cardsElement[i].firstChild.textContent;
+        }
+    }
+
+    if (cardsKeepElement.length == 0 || !cardsKeep.includes(currentIngredient)) {
+        addToList('list-keep', currentIngredient);
+        cardsKeep.push(currentIngredient);
+    }
+
+    if (cardsSweep.includes(currentIngredient)) {
+        var pos = cardsSweep.indexOf(currentIngredient);
+        cardsSweep.splice(pos, 1);
+    }
+
+    for (var i = 0; i < cardsSweepElement.length; i++) {
+        if (cardsSweepElement[i].firstChild.textContent == currentIngredient) {
+            cardsSweepElement[i].parentNode.removeChild(cardsSweepElement[i]);
+        }
+    }
+
+    findRecipe();
+    addListRecipe();
+    firstToLast();
+    rotateCard();
+}
+
+
+/**
+ * ----------CALL METHODS----------
+ */
 
 /**
  * Appel de la methode loadJSON() pour l'initialisation des cartes ingrédients
