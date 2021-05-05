@@ -161,6 +161,36 @@ const findRecipe = () => {
 }
 
 /**
+ * Ajouter le recette à la liste recette
+ */
+ const addListRecipe = () => {
+    
+    var listRecipes = document.getElementById("list-recipes");
+    listRecipes.innerHTML = "";
+
+    // Si il n'y a pas de recettes trouvée
+    if (recipesFind.length == 0) {
+        if (listRecipes.firstChild == null) {
+            addToList("list-recipes", "Aucune recette trouvée");
+            nbrRecipesFindElement.innerHTML = "0 Recette trouvée";
+        }
+
+        // Si il y a des recettes
+    } else {
+
+        if (listRecipes.firstChild != null) {
+            if (listRecipes.firstChild.textContent == "Aucune recette trouvée") {
+                listRecipes.firstChild.remove();
+            }
+        }
+
+        for (var i = 0; i < recipesFind.length; i++) {
+            addToList("list-recipes", recipesFind[i][0], recipesFind[i][1]);
+        }
+    }
+}
+
+/**
  * 
  */
  const firstToLast = () => {
