@@ -1,0 +1,264 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+body {
+    background-color: #70969c;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(238, 240, 238, 0.652);
+    padding: 2vh;
+    margin: 0;
+    font-size: 2rem;
+}
+
+h1 span:nth-child(1) {
+    color: rgb(255, 0, 0);
+}
+
+h1 span:nth-child(2) {
+    color: rgb(4, 187, 34);
+}
+
+#ctn-cards {
+    display: block;
+    overflow: auto;
+    height: 63vh;
+}
+
+.card {
+    height: 320px;
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px 0px 2px 0px rgb(138, 138, 138);
+    -webkit-box-shadow: 0px 0px 2px 0px rgb(138, 138, 138);
+    -moz-box-shadow: 0px 0px 2px 0px rgb(138, 138, 138);
+    border-radius: 2px;
+    margin-top: 6rem;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.card-title p {
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.card-img {
+    height: 65%;
+}
+
+.card-btn {
+    height: 20%;
+    background-color: rgb(238, 240, 238);
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.btns {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-sweep {
+    background-image: url("assets/times-circle-regular.svg");
+}
+
+.btn-keep {
+    background-image: url("assets/check-circle-regular.svg");
+}
+
+#lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+#sweep,
+#keep,
+#recipes {
+    margin: 1rem 1rem 0rem 1rem;
+    margin-bottom: 1rem;
+    overflow-x: visible;
+}
+
+#sweep::-webkit-scrollbar,
+#keep::-webkit-scrollbar,
+#recipes::-webkit-scrollbar {
+    width: 10px;
+    background-color: #698185;
+}
+
+#sweep p,
+#keep p,
+#recipes p {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-top: 0;
+    background-color: white;
+    margin-bottom: 0;
+    font-weight: 800;
+    background-color: rgb(238, 240, 238);
+}
+
+#sweep p {
+    color: rgb(237, 32, 32);
+}
+
+#keep p {
+    color: rgb(4, 187, 34);
+}
+
+#list-sweep,
+#list-keep,
+#list-recipes {
+    min-height: 2rem;
+    background-color: white;
+    padding-top: .5rem;
+    margin: 0;
+    padding-bottom: .5rem;
+    font-weight: 800;
+}
+
+#list-recipes {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+#list-recipes li {
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+#list-recipes li:nth-child(even) {
+    background-color: rgb(238, 240, 238);
+}
+
+#list-recipes img {
+    height: auto;
+    width: 300px;
+    align-self: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+#recipes-find {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+/* 
+Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap 
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .card {
+        margin-top: auto;
+    }
+
+    #ctn-keep-sweep {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sweep,
+    #keep {
+        width: 100%;
+    }
+
+    .ctn-recipes {
+        width: 100%;
+    }
+
+    #ctn-cards {
+        display: block;
+        overflow: auto;
+        height: 70vh;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    #sweep,
+    #keep {
+        width: 300px;
+        max-height: 100%;
+        overflow-y: auto;
+    }
+
+    #ctn-keep-sweep {
+        justify-content: center;
+        height: inherit;
+    }
+
+    #ctn-recipes {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 900px;
+    }
+
+    #recipe {
+        max-height: 100%;
+        overflow-y: auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #ctn-cards {
+        height: inherit;
+    }
+
+    #ctn-keep-sweep {
+        height: inherit;
+        justify-content: space-between;
+        height: inherit;
+        height: 80vh;
+    }
+
+}
+
