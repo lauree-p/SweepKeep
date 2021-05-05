@@ -99,7 +99,7 @@ const rotateCard = () => {
 /**
  * Ajouter à la liste
  */
- const addToList = (list, ingredientName, image) => {
+const addToList = (list, ingredientName, image) => {
     image = (typeof image === 'undefined') ? 'default' : image;
     var ul = document.getElementById(list);
     var li = document.createElement("li");
@@ -125,45 +125,58 @@ const rotateCard = () => {
 /**
  * Permet de savoir si la valeur est == true
  */
- const isTrue = (currentValue) => currentValue == true;
+const isTrue = (currentValue) => currentValue == true;
 
- /**
-  * Trouver une recette
-  */
- const findRecipe = () => {
- 
-     recipesFind = [];
-     // On parcours les recettes
-     for (var i = 0; i < recipes.length; i++) {
-         // Remise à zero des tableaux
-         ingredientsFind = [];
-         ingredientsFindByRecipe = [];
- 
-         for (var j = 0; j < recipes[i].ingredients.length; j++) {
-             var ingreFind = cardsKeep.includes(recipes[i].ingredients[j]);
-             ingredientsFind.push(ingreFind);
-         }
- 
-         ingredientsFindByRecipe[i] = ingredientsFind;
- 
-         if (ingredientsFindByRecipe[i].every(isTrue)) {
-             var recipeWithImg = [recipes[i].title, recipes[i].img];
-             if (!recipesFind.includes(recipes[i].title)) {
-                 recipesFind.push(recipeWithImg);
-             }
-         } else {
-             var pos = recipesFind.indexOf(recipes[i].title);
-             recipesFind.splice(pos, 1);
-         }
-     }
-     nbrRecipesFindElement.innerHTML = recipesFind.length+" Recettes trouvées";
-     recipesFind.sort();
+/**
+ * Trouver une recette
+ */
+const findRecipe = () => {
+
+    recipesFind = [];
+    // On parcours les recettes
+    for (var i = 0; i < recipes.length; i++) {
+        // Remise à zero des tableaux
+        ingredientsFind = [];
+        ingredientsFindByRecipe = [];
+
+        for (var j = 0; j < recipes[i].ingredients.length; j++) {
+            var ingreFind = cardsKeep.includes(recipes[i].ingredients[j]);
+            ingredientsFind.push(ingreFind);
+        }
+
+        ingredientsFindByRecipe[i] = ingredientsFind;
+
+        if (ingredientsFindByRecipe[i].every(isTrue)) {
+            var recipeWithImg = [recipes[i].title, recipes[i].img];
+            if (!recipesFind.includes(recipes[i].title)) {
+                recipesFind.push(recipeWithImg);
+            }
+        } else {
+            var pos = recipesFind.indexOf(recipes[i].title);
+            recipesFind.splice(pos, 1);
+        }
+    }
+    nbrRecipesFindElement.innerHTML = recipesFind.length + " Recettes trouvées";
+    recipesFind.sort();
+}
+
+/**
+ * 
+ */
+ const firstToLast = () => {
+    for (var i = 0; i < cardsElement.length; i++) {
+        if (cardsElement[i].style.zIndex == cardsElement.length) {
+            cardsElement[i].style.zIndex = 1;
+        } else {
+            cardsElement[i].style.zIndex++;
+        }
+    }
 }
 
 /**
  * Au clic sur le bouton Sweep
  */
- const sweep = () => {
+const sweep = () => {
     cardsElement = document.getElementsByClassName("card");
     var cardsSweepElement = document.getElementsByClassName("ingre-sweep");
     var currentIngredient;
@@ -204,7 +217,7 @@ const rotateCard = () => {
 /**
  * Au clic sur le bouton Keep 
  */
- const keep = () => {
+const keep = () => {
     cardsElement = document.getElementsByClassName("card");
     var cardsKeepElement = document.getElementsByClassName("ingre-keep");
     var currentIngredient;
@@ -275,7 +288,7 @@ loadJSON('ingredients.json', function (response) {
         // Image des cartes
         var cardImg = document.createElement('div');
         cardImg.classList.add("card-img");
-        cardImg.style.backgroundImage = "url("+ ingredients[i].img; + "\")";
+        cardImg.style.backgroundImage = "url(" + ingredients[i].img; + "\")";
         cardImg.style.backgroundRepeat = "no-repeat";
         cardImg.style.backgroundSize = "contain";
         cardImg.style.backgroundPosition = "center";
@@ -299,3 +312,20 @@ loadJSON('ingredients.json', function (response) {
         cards.push(card);
     }
 });
+
+/**
+ * Appel de la methode loadJSON() pour l'initialisation des recettes
+ */
+loadJSON('recipes.json', function (response) {
+    listRecipes = JSON.parse(response);
+    nbrRecipes = listRecipes.length;
+    // On parcours les recettes
+    for (var i = 0; i < nbrRecipes; i++) {
+        // On crée un objet Recipe pour chaques recettes
+        recipe = new Recipe(listRecipes[i].name, listRecipes[i].img, listRecipes[i].ingredients);
+        // On ajoute l'objet crée dans un tableau
+        recipes.push(recipe);
+    }
+});
+
+addListRecipe();
