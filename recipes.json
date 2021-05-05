@@ -1,0 +1,253 @@
+[{
+        "name": "Gâteau au yaourt",
+        "img": "img_recipe/gateau_au_yaourt.jpg",
+        "ingredients": [
+            "Citron jaune",
+            "Farine",
+            "Sucre",
+            "Huile",
+            "Levure chimique",
+            "Yaourt nature",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Pâte à crèpes",
+        "img": "img_recipe/pate_a_crepes.jpg",
+        "ingredients": [
+            "Rhum",
+            "Lait",
+            "Huile",
+            "Sucre",
+            "Farine",
+            "Oeuf",
+            "Beurre"
+        ]
+    },
+    {
+        "name": "Gâteau au chocolat fondant",
+        "img": "img_recipe/gateau_au_chocolat_fondant.jpg",
+        "ingredients": [
+            "Sucre",
+            "Farine",
+            "Chocolat",
+            "Beurre",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Pankakes",
+        "img": "img_recipe/pankakes.jpg",
+        "ingredients": [
+            "Lait",
+            "Sel",
+            "Levure chimique",
+            "Sucre",
+            "Farine",
+            "Oeuf",
+            "Beurre"
+        ]
+    },
+    {
+        "name": "Tiramisu",
+        "img": "img_recipe/tiramisu.jpg",
+        "ingredients": [
+            "Biscuit à la cuillère",
+            "Sucre vanillé",
+            "Sucre roux",
+            "Oeuf",
+            "Mascarpone",
+            "Café",
+            "Cacao"
+        ]
+    },
+    {
+        "name": "Cookies",
+        "img": "img_recipe/cookies.jpg",
+        "ingredients": [
+            "Levure chimique",
+            "Sel",
+            "Chocolat",
+            "Farine",
+            "Sucre vanillé",
+            "Sucre",
+            "Beurre",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Mousse au chocolat",
+        "img": "img_recipe/mouse_au_chocolat.jpg",
+        "ingredients": [
+            "Sucre vanillé",
+            "Chocolat",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Gaufres",
+        "img": "img_recipe/gaufres.jpg",
+        "ingredients": [
+            "Sel",
+            "Lait",
+            "Sucre",
+            "Farine",
+            "Oeuf",
+            "Beurre"
+        ]
+    },
+    {
+        "name": "Crumble au pommes",
+        "img": "img_recipe/crumble_au_pommes.jpg",
+        "ingredients": [
+            "Citron jaune",
+            "Sucre vanillé",
+            "Cannelle en poudre",
+            "Farine",
+            "Sucre roux",
+            "Pomme",
+            "Beurre"
+        ]
+    },
+    {
+        "name": "Tarte aux pommes",
+        "img": "img_recipe/tarte_au_pommes.jpg",
+        "ingredients": [
+            "Sucre vanillé",
+            "Pomme",
+            "Pâte brisée",
+            "Beurre"
+        ]
+    },
+    {
+        "name": "Galette des rois à la frangipane",
+        "img": "img_recipe/galette_des_rois_frangipane.jpg",
+        "ingredients": [
+            "Poudre d'amandes",
+            "Pâte feuilletée",
+            "Sucre",
+            "Oeuf",
+            "Beurre"
+        ]
+    },
+    {
+        "name": "Pain perdu",
+        "img": "img_recipe/pain_perdu.jpg",
+        "ingredients": [
+            "Sucre roux",
+            "Lait",
+            "Oeuf",
+            "Pain"
+        ]
+    },
+    {
+        "name": "Meringue",
+        "img": "img_recipe/meringue.jpg",
+        "ingredients": [
+            "Sucre",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Flan pâtissier",
+        "img": "img_recipe/flan_patissier.jpg",
+        "ingredients": [
+            "Vanille",
+            "Maïzena",
+            "Sucre",
+            "Lait",
+            "Pâte brisée",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Clafoutis aux cerises",
+        "img": "img_recipe/clafoutis_au_cerise.jpg",
+        "ingredients": [
+            "Sucre glace",
+            "Sel",
+            "Sucre vanillé",
+            "Sucre",
+            "Farine",
+            "Lait",
+            "Cerise",
+            "Beurre",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Brownies aux noix",
+        "img": "img_recipe/brownie_au_noix.jpg",
+        "ingredients": [
+            "Noix",
+            "Sucre glace",
+            "Farine",
+            "Sucre",
+            "Chocolat",
+            "Beurre",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Tarte amandine aux poires",
+        "img": "img_recipe/tarte_amandine_poire.jpg",
+        "ingredients": [
+            "Farine",
+            "Poudre d'amandes",
+            "Sucre",
+            "Pâte brisée",
+            "Poire au sirop",
+            "Beurre",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Chouquettes",
+        "img": "img_recipe/chouquette.jpg",
+        "ingredients": [
+            "Farine",
+            "Sucre",
+            "Sel",
+            "Eau",
+            "Beurre",
+            "Oeuf",
+            "Sucre en grain"
+        ]
+    },
+    {
+        "name": "Far breton",
+        "img": "img_recipe/far_breton.jpg",
+        "ingredients": [
+            "Rhum",
+            "Pruneau",
+            "Lait",
+            "Sucre vanillé",
+            "Sucre",
+            "Farine",
+            "Oeuf"
+        ]
+    },
+    {
+        "name": "Churros",
+        "img": "img_recipe/churros.jpg",
+        "ingredients": [
+            "Farine",
+            "Sucre",
+            "Sel",
+            "Eau",
+            "Beurre",
+            "Oeuf",
+            "Huile"
+        ]
+    },
+    {
+        "name": "Compote de pommes",
+        "img": "img_recipe/compote_de_pommes.jpg",
+        "ingredients": [
+            "Sucre",
+            "Eau",
+            "Vanille",
+            "Pomme"
+        ]
+    }
+]
