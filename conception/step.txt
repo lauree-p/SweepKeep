@@ -1,0 +1,35 @@
+I - Préparation
+
+1 - Faire une liste de recettes
+
+Pour chaques recettes :
+- Un nom
+- Une image
+- Une liste d'ingrédient
+
+2 - Faire la liste de tout les ingrédients de toute les recettes choisies
+
+Pour chaques ingrédients :
+- Un nom
+- Une image
+
+3 - Convertir la liste des recettes en fichier Json ("recipes.json")
+
+4 - Convertir la liste des ingrédients en fichier Json ("ingredients.json")
+
+5 - Créer un fichier html
+
+6 - Créer un fichier Js
+
+II - Les données
+
+- Récupérer les données des fichiers Json
+
+III - Interface
+
+- Création des cartes
+
+- Création des autres blocs
+
+IV - Methodes sweep et keep
+

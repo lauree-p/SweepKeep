@@ -1,0 +1,253 @@
+LIST_RECIPES
+
+--------------------------------------------------------1
+Gâteau au yaourt
+
+- Citron jaune
+- Farine
+- Sucre en poudre
+- Huile
+- Levure chimique
+- Yaourt nature
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_gateau-au-yaourt_12719.aspx
+
+--------------------------------------------------------2
+Pâte à crèpes
+
+- Rhum
+- Lait
+- Huile
+- Sucre
+- Farine
+- Oeuf
+- Beurre
+
+Lien : https://www.marmiton.org/recettes/recette_pate-a-crepes_12372.aspx
+
+--------------------------------------------------------3
+Gâteau au chocolat fondant
+
+- Sucre en poudre
+- Farine
+- Chocolat
+- Beurre
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_gateau-au-chocolat-fondant-rapide_166352.aspx
+
+--------------------------------------------------------4
+Pankakes
+
+- Lait
+- Sel
+- Levure chimique
+- Sucre en poudre
+- Farine
+- Oeuf
+- Beurre
+
+Lien : https://www.marmiton.org/recettes/recette_pancakes_15299.aspx
+
+--------------------------------------------------------5
+Tiramisu
+
+- Biscuit à la cuillère
+- Sucre vanillé
+- Sucre roux
+- Oeuf
+- Mascarpone
+- Café
+- Cacao
+
+Lien : https://www.marmiton.org/recettes/recette_tiramisu-recette-originale_12023.aspx
+
+--------------------------------------------------------6
+Cookies
+
+- Levure chimique
+- Sel
+- Chocolat
+- Farine
+- Sucre vanillé
+- Sucre en poudre
+- Beurre
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_cookies-maison_86989.aspx
+
+--------------------------------------------------------7
+Mousse au chocolat
+
+- Sucre vanillé
+- Chocolat
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_mousse-au-chocolat-facile_13585.aspx
+
+--------------------------------------------------------8
+Gaufres
+
+- Sel
+- Lait
+- Sucre
+- Farine
+- Oeuf
+- Beurre
+
+Lien : https://www.marmiton.org/recettes/recette_gaufres-faciles-et-legeres_87278.aspx
+
+--------------------------------------------------------9
+Crumble au pommes
+
+- Citron jaune
+- Sucre vanillé
+- Cannelle en poudre
+- Farine
+- Sucre roux
+- Pomme
+- Beurre
+
+Lien : https://www.marmiton.org/recettes/recette_le-crumble-aux-pommes-du-chat-qui-tousse_10534.aspx
+
+--------------------------------------------------------10
+Tarte aux pommes
+
+- Sucre vanillé
+- Pommes
+- Pâte brisée
+- Beurre
+
+Lien : https://www.marmiton.org/recettes/recette_tarte-aux-pommes_18588.aspx
+
+--------------------------------------------------------11
+Galette des rois à la frangipane
+
+- Poudre d'amandes
+- Pâte feuilletée
+- Sucre en poudre
+- Oeuf
+- Beurre
+
+Lien : https://www.marmiton.org/recettes/recette_galette-des-rois-a-la-frangipane_20147.aspx
+
+--------------------------------------------------------12
+Pain perdu
+
+- Sucre roux
+- Lait
+- Oeuf
+- Pain
+
+Lien : https://www.marmiton.org/recettes/recette_pain-perdu_10975.aspx
+
+--------------------------------------------------------13
+Meringue
+
+- Sucre en poudre
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_meringue-pour-les-nuls_36610.aspx
+
+--------------------------------------------------------14
+Flan pâtissier
+
+- Vanille
+- Maïzena
+- Sucre en poudre
+- Lait
+- Pâte brisée
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_flan-patissier-traditionnel_15330.aspx
+
+--------------------------------------------------------15
+Clafoutis aux cerises
+
+- Sucre glace
+- Sel
+- Sucre vanillé
+- Sucre en poudre
+- Farine
+- Lait
+- Cerise
+- Beurre
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_clafoutis-grand-mere-aux-cerises_29896.aspx
+
+--------------------------------------------------------16
+Brownies aux noix
+
+- Noix
+- Sucre glace
+- Farine
+- Sucre en poudre
+- Chocolat
+- Beurre
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_brownies-aux-noix_11807.asp
+
+--------------------------------------------------------17
+Tarte amandine aux poires
+
+- Farine
+- Poudre d'amandes
+- Sucre en poudre
+- Pâte brisée
+- Poire au sirop
+- Beurre
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_tarte-amandine-aux-poires_14195.aspx
+
+--------------------------------------------------------18
+Chouquettes
+
+- Farine
+- Sucre en poudre
+- Sel
+- Eau
+- Beurre
+- Oeuf
+- Sucre en grain
+
+Lien : https://www.marmiton.org/recettes/recette_chouquettes-simples_13761.aspx
+
+--------------------------------------------------------19
+Far breton
+
+- Rhum
+- Pruneau
+- Lait
+- Sucre vanillé
+- Sucre en poudre
+- Farine
+- Oeuf
+
+Lien : https://www.marmiton.org/recettes/recette_far-breton-facile_13202.aspx
+
+--------------------------------------------------------20
+Churros
+
+- Farine
+- Sucre en poudre
+- Sel
+- Eau
+- Beurre
+- Oeuf
+- Huile
+
+Lien : https://www.marmiton.org/recettes/recette_churros_24177.aspx
+
+--------------------------------------------------------21
+Compote de pommes
+
+- Sucre en poudre
+- Eau
+- Vanille
+- Pomme
+
+Lien : https://www.marmiton.org/recettes/recette_compote-de-pomme-simple_82104.aspx
